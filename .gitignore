@@ -23,6 +23,16 @@ wp-content/backupwordpress-*/
 wp-content/cache/
 wp-content/backups/
 
+# liquidweb specific
+wp-content/mu-plugins/liquid-web
+wp-content/mu-plugins/plugin-reports
+wp-content/mu-plugins/wp-cli-packages
+wp-content/mu-plugins/000-liquidweb-config.php
+wp-content/mu-plugins/liquid-web.php
+wp-content/mu-plugins/liquidweb_mwp.php
+wp-content/mu-plugins/lw_disable_nags.php
+wp-content/mu-plugins/lw
+
 # pantheon specific
 wp-content/plugins/pantheon-advanced-page-cache
 wp-content/mu-plugins/pantheon
@@ -40,7 +50,11 @@ wp-content/mu-plugins/slt-force-strong-passwords.php
 wp-content/mu-plugins/limit-login-attempts
 wp-content/mu-plugins/wpengine-common
 wp-content/mysql.sql
+wp-content/mu-plugins/wpe
 wp-content/mu-plugins/mu.php
+
+# Languages
+wp-content/languages
 
 # Sitemaps
 sitemap.xml
