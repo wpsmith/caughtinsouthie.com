@@ -1,0 +1,193 @@
+/* Custom Libsyn Dashicons */
+.libsyn-dashicions-download:before {
+    content: "\f316";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-upload:before {
+    content: "\f317";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-wordpress:before {
+    content: "\f120";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-cloud:before {
+    content: "\f176";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-image:before {
+    content: "\f128";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-menu:before {
+    content: "\f333";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicons-art:before {
+    content: "\f309";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-format-video:before {
+    content: "\f126";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-edit:before {
+    content: "\f464";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-close:before {
+    content: "\f335";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-add:before {
+    content: "\f132";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-trash:before {
+    content: "\f182";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-update:before {
+    content: "\f463";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-check:before {
+    content: "\f147";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-update:before {
+    content: "\f463";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-plus-alt:before {
+    content: "\f502";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-art:before {
+    content: "\f309";
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 'dashicons';
+    display: inline-block;
+    height: 25px;
+    margin-right: 6px;
+    position: relative;
+    top: 0px;
+    vertical-align: middle;
+}
+.libsyn-dashicions-download-phpinfo {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAABsUlEQVRYw+2WTyhEURTGh4iaURYimRRjI7KSrNSUxTRK8kaJlbViaRZ2rNhIFjZspFnM1kaylSmU0rBSI0UmzYIRIzO+W9/Tw73vX6NGva9+Ne+dc885c8/983w+T548/TNVgyAYABEwRiJ8F6RP2VQHomANpEAelCzI01eMGWEMxwqBDZCzkdCKHGOF7CQOsPKCjcCLIAzebRZSYOyAKnknSDv4Z12gz8WMpJnrm1pARuJ8Ck7IGXji+0dQxR4L2zl4pu3WMEZwLYmbYc4vJSVO95JZagAHYF9huwBTEtukJH5SN7aDosRBT7IKsuCYK1psuSXaDsEDWODzLuhhe7KcjXHaLn/ELzK3T1P0aoUDj/j8AupBDIzy9xttcfqK7VcDJgxx5mm7keTQzAqY5sBNsM1+C+2BVjBo8A2zBSn6iMNpBywDPxhW5NDMWtALakETaANDIAHu+C5Ovw/QwVnZYgGNoBl0g1ku2pKqBbJF+MrkMYdbbM5kupWLULYNr1j9usMCZkC/Db9f29DNQeQW6UGky+/gKHaK5VFcEZdRua/jqNvruGI+SDx58vTn+gROYkclCDI2uAAAAABJRU5ErkJggg==');
+  -webkit-font-smoothing: antialiased;
+  height: 32px;
+  width: 32px;
+  top: 25% !important;
+  margin-left: -2px !important;
+}

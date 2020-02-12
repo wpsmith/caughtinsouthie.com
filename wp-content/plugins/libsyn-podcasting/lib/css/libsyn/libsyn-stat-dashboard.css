@@ -1,0 +1,83 @@
+ #libsyn-stat-dashboard .libsyn-stat-container{
+  min-width: 320px;
+  max-width: 800px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+#libsyn-stat-dashboard div{
+  padding: 0;
+}
+#libsyn-stat-dashboard .libsyn-stat-dashboard-hidden{
+  display: none;
+  visibility: hidden;
+}
+#libsyn-stat-dashboard .libsyn-stat-container .heading{
+  font-weight: 700;
+  font-size: 110%;
+  letter-spacing: 3px;
+  line-height: 300%;
+  text-transform: uppercase;
+}
+#libsyn-stat-dashboard .libsyn-stat-top{
+  display: flex;
+  align-items: center;
+}
+#libsyn-stat-dashboard .libsyn-stat-bottom_heading{
+  background-color: #216682;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  height:30px !important;
+}
+#libsyn-stat-dashboard .libsyn-stat-table-row{
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #f4fafc;
+  padding: 0;
+}
+#libsyn-stat-dashboard .libsyn-stat-table-row:nth-child(even){
+  background: #E0F1F7;
+}
+
+#libsyn-stat-dashboard .libsyn-stat-table-row:not(.libsyn-stat-table-row_first){
+  height: 100px;
+  align-items: center;
+  overflow-y: hidden;
+  transition: height 1s ease-in-out;
+}
+
+#libsyn-stat-dashboard .libsyn-stat-table-row:not(.libsyn-stat-table-row_first):hover{
+  height: 150px;
+}
+#libsyn-stat-dashboard .libsyn-stat-table_hidden{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 15px;
+  visibility: hidden;
+}
+#libsyn-stat-dashboard .libsyn-stat-table_hidden div{
+  flex: 1;
+}
+#libsyn-stat-dashboard .libsyn-stat-table-row:not(.libsyn-stat-table-row_first):hover .libsyn-stat-table_hidden{
+  opacity: 1;
+  visibility: visible;
+}
+#libsyn-stat-dashboard .libsyn-stat-table-cell{
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: hidden;
+  list-style: none;
+  padding: 10px 8px;
+  width: 33.33%;
+  text-align: center;
+}

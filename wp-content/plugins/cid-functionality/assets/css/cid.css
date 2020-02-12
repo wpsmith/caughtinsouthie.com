@@ -1,0 +1,17 @@
+
+.site-header .title-area .site-title a {
+	background: url(../images/logo.svg) no-repeat left center;
+	background-size: contain;
+}
+
+@media only screen and (min-width: 1240px) {
+	.site-header .title-area .site-title a {
+		background: url(../images/logo-tagline.svg) no-repeat left center;
+		background-size: contain;
+	}
+}
+
+.sidr .sidr-header a.site-logo {
+	background: url(../images/logo.svg) no-repeat left center;
+	background-size: contain;
+}

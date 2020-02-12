@@ -1,0 +1,395 @@
+/*Main Container*/
+.libsyn_mylibsyn{
+  --mylibsyn-color-main: #6ba342;
+  --mylibsyn-color-text: #343434;
+  --mylibsyn-background: white;
+  font-family: 'Open Sans', sans-serif;
+  flex-grow: 1;
+  border-top: 1px var(--mylibsyn-color-main) solid;
+  background: var(--mylibsyn-background);
+  padding: 5px;
+  color: var(--mylibsyn-color-text);
+}
+
+.mylibsyn-widget-title{
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: .5px;
+  margin-top: 20px;
+}
+
+/*MyLibsyn Login Styles*/
+#mylibsyn-login-message{
+  font-size: 13px;
+  background-color: #ffdddd;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  color: #f44336;
+}
+.mylibsyn-login-field-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.mylibsyn-login-field-row input:-webkit-autofill,
+.mylibsyn-login-field-row input:-webkit-autofill:hover,
+.mylibsyn-login-field-row input:-webkit-autofill:focus,
+.mylibsyn-login-field-row input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.mylibsyn-login-field-group {
+  position: relative;
+  margin: 25px 0;
+}
+.mylibsyn-login-field-group input{
+  background: none;
+  font-size: 16px;
+  padding: 10px 0px 5px 5px;
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 230px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+}
+.mylibsyn-login-field-group input:focus{
+  outline: none !important;
+}
+.mylibsyn-login-field-group input:focus ~ label,
+.mylibsyn-login-field-group input:valid ~ label{
+  top: -14px;
+  font-size: 12px;
+  color: var(--mylibsyn-color-main);
+}
+.mylibsyn-login-field-group input:focus ~ span:last-of-type:before{
+  width: 230px;
+}
+
+.mylibsyn-login-field-group input[type=password] {
+  letter-spacing: 0.3em;
+}
+
+.mylibsyn-login-field-group label {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.mylibsyn-login-field-group span:last-of-type {
+  position: relative;
+  display: block;
+  width: 230px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.mylibsyn-login-field-group span:last-of-type:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: var(--mylibsyn-color-main);
+  transition: 300ms ease all;
+  left: 0%;
+}
+.mylibsyn-login-row{
+  display:flex;
+  margin-left: 5px;
+  align-items: center;
+}
+.mylibsyn-login-btn{
+  background-color: var(--mylibsyn-color-main);
+  border-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  transition: background-color .1s ease-in-out, border .5s ease-in-out;
+}
+.mylibsyn-login-btn:hover{
+  background-color: white;
+  border: 2px solid var(--mylibsyn-color-main);
+  color: var(--mylibsyn-color-text);
+}
+.mylibsyn-trouble-link{
+  font-size: 14px;
+  margin-left: 10px;
+  color: var(--mylibsyn-color-text);
+}
+
+/*MyLibsyn Logged in User Styles*/
+.mylibsyn-loggedin-container{
+  min-width: 280px;
+  position: relative;
+  z-index: 0;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.mylibsyn-loggedin-row{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  z-index: 99;
+  background: #f8f8ff;
+  color: #343434;
+  border-radius: 10px 10px 0px 0px;
+  flex-wrap: wrap;
+}
+
+.mylibsyn-loggedin-row:before{
+  content: "\f156";
+  -webkit-font-smoothing: antialiased;
+  font: normal 25px/1 'dashicons';
+  color: var(--mylibsyn-color-main);
+  display: inline-block;
+  transform: rotate(0);
+  transition: transform .25s ease-in 1s;
+}
+.mylibsyn-loggedin-row:hover:before{
+  transform: rotate(180deg);
+  transition: transform .25s ease-in 0s;
+}
+
+@media screen and (max-width: 500px){
+  .mylibsyn-loggedin-row-link{
+    margin-bottom: 20px
+  }
+}
+
+.mylibsyn-loggedin-row-hidden{
+  z-index: -99;
+  opacity:0;
+  position: absolute;
+  top: 0;
+  background: white;
+  border: 1px #ededed solid;
+  width: 100%;
+  overflow: hidden;
+  transform: rotate(10deg);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  display: block;
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1s;
+}
+
+.mylibsyn-loggedin-row:hover + .mylibsyn-loggedin-row-hidden,
+.mylibsyn-loggedin-row-hidden:hover{
+  opacity: 1;
+  position: absolute;
+  top: 50px;
+  align-items: center;
+  padding: 20px;
+  transform: rotate(0deg);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+}
+
+
+.mylibsyn-loggedin-row-link a {
+  border: 2px solid var(--mylibsyn-color-main);
+  background-color: var(--mylibsyn-color-main);
+  color: #fff;
+  transition: .3s;
+  padding: 4px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 13px;
+}
+.mylibsyn-loggedin-row-link a:hover {
+  box-shadow: 2px 2px #b2b2b2;
+  color: #fff;
+  transition: .3s;
+}
+.mylibsyn-loggedin-row-link a:after{
+  content:"";
+  opacity: 0;
+  transition: all .3s ease-in;
+  transform: translate(-35px, 0px);
+  display: inline-block;
+}
+.mylibsyn-loggedin-row-link a:hover:after{
+  content:attr(data-btn-txt);
+  opacity: 1;
+  margin-left: 8px;
+  transform: translate(0px, 0px);
+}
+.mylibsyn-loggedin-container .dashicons{
+  line-height: 2.2;
+}
+
+.mylibsyn-loggedin-circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: justify;
+	background-color: var(--mylibsyn-color-main);
+	color: #fff;
+	font-size: 24px;
+	font-weight: 800;
+  margin: auto;
+}
+
+/* .libsyn-show {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+.libsyn-show:hover {
+  cursor: pointer;
+}
+.libsyn-show:active {
+  transform: scale(0.9);
+}
+.libsyn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  border: 0;
+  font-weight: 200;
+  border: 1px solid #75ba35;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  letter-spacing: inherit;
+}
+.libsyn-close:hover {
+	background: rgba(0,128,128,0);
+	color: #6ba342;
+	font-weight: bold;
+	border-width: 0px;
+	letter-spacing: 1.5px;
+}
+.libsyn-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s;
+}
+.libsyn-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 480px;
+  margin-left: -200px;
+  margin-top: -150px;
+  background: #fff;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  transform: translateY(45px);
+}
+.libsyn-active {
+  visibility: visible;
+  opacity: 1;
+}
+.libsyn-active + .libsyn-modal {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.libsyn-modal {
+	padding: 4px 2px;
+	z-index: 1001;
+	font-family: "Open Sans", sans-serif;
+}
+.libsyn-modal h1,h2,h3,h4,h5 {
+	color: #000;
+	padding: 4px;
+	font-size: 1.2em !important;
+}
+.libsyn-modal dl {
+	border: 3px solid #008080;
+	padding: 0.2em;
+	font-size: 15px;
+}
+.libsyn-modal dt {
+	float: left;
+	clear: left;
+	width: 120px;
+	text-align: right;
+	font-weight: bold;
+	color: green;
+}
+.libsyn-modal a {
+	color: green;
+}
+.libsyn-modal dt::after {
+	content: ":";
+}
+.libsyn-modal dt.no-semicolon::after {
+	content: "";
+}
+.libsyn-modal dd {
+	color: #000;
+	margin: 0 0 0 140px;
+	padding: 0 0 0.5em 0;
+}
+
+.myLibsyn-logo {
+	width: 100%;
+	margin-left:12px;
+}
+.myLibsyn-logged-in {
+	margin-left: 24px;
+}
+.mylibsyn-loggedin-circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	text-align: justify;
+	background-color: #aed581;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 800;
+	margin-left: 16px;
+}
+.myLibsyn-manage-link {
+	font-weight:600;
+	font-size: 1.1em;
+}
+.libsyn-modal .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+	border-radius: 0;
+	line-height: 1.2;
+	padding: 2px;
+	text-decoration: none;
+}
+#myLibsynLogout {
+	font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #42a568;
+    border-radius: 1px 1px 1px 1px;
+	padding: 15px 30px;
+}
+#myLibsynLoginButton {
+	font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #42a568;
+    border-radius: 1px 1px 1px 1px;
+	padding: 15px 30px;
+}
+#myLibsynLoginForm {
+	font-family: "Open Sans", sans-serif;
+} */

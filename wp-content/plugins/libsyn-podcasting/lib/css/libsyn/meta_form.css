@@ -1,0 +1,247 @@
+input:required:invalid, input:focus:invalid, textarea:required:invalid, textarea:focus:invalid {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT1JREFUeNpi/P//PwMpgImBRMACY/x7/uDX39sXt/67cMoDyOVgMjBjYFbV/8kkqcCBrIER5KS/967s+rmkXxzI5wJiRSBm/v8P7NTfHHFFl5mVdIzhGv4+u///x+xmuAlcdXPB9KeqeLgYd3bDU2ZpRRmwH4DOeAI07QXIRKipYPD35184/nn17CO4p/+cOfjl76+/X4GYAYThGn7/g+Mfh/ZZwjUA/aABpJVhpv6+dQUjZP78Z0YEK7OezS2gwltg64GmfTu6i+HL+mUMP34wgvGvL78ZOEysf8M1sGgZvQIqfA1SDAL8iUUMPIFRQLf+AmMQ4DQ0vYYSrL9vXDz2sq9LFsiX4dLRA0t8OX0SHKzi5bXf2HUMBVA0gN356N7p7xdOS3w5fAgcfNxWtn+BJi9gVVBOQfYPQIABABvRq3BwGT3OAAAAAElFTkSuQmCC");
+    background-position: right top;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+input:required:valid, textarea:required:valid {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAZZJREFUeNpi/P//PwMpgImBRMAy58QshrNPTzP8+vOLIUInisFQyYjhz98/DB9/fmT48/+35v7H+8KNhE2+WclZd+G0gZmJmYGThUNz1fUVMZtvbWT59eUXG9wGZIWMUPj993eJ5VeWxuy8veM/CzPL3yfvH/9H0QBSBDYZyOVm4mGYfn6q4cory5lYmFh+MrEwM/76/YsR7mk2ZjbWP///WP37/y8cqIDhx58fjvtu7XV6//ndT34G/v8FasUsDjKO/+A2PP3wpGLd+TVsfOz8XH6KAT+nHpokcu7h6d9q/BoMxToVbBYqlt9///+1GO4/WVdpXqY/zMqXn13/+vTjI9mj94/y//v9/3e9ZRObvYbDT0Y2xnm///x+wsfHB3GSGLf41jb3rv0O8nbcR66d+HPvxf2/+YZFTHaqjl8YWBnm/vv37yly5LL8+vuLgYuVa3uf/4T/Kd8SnSTZpb6FGUXwcvJxbAPKP2VkZESNOBDx8+9PBm4OwR1TwmYwcfzjsBUQFLjOxs52A2YyKysrXANAgAEA7buhysQuIREAAAAASUVORK5CYII=");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.libsyn-advanced-release-time {
+	margin-top: 10px;
+}
+.ui-dialog-titlebar-close:before {
+	line-height: 18px;
+}
+
+/* libsyn meta box */
+div.libsyn-post-form a {
+	color: #60a135;
+}
+div.libsyn-post-form a:hover {
+	color: #68b335;
+}
+div.libsyn-post-form #titlewrap {
+	max-width: 90%;
+}
+div.libsyn-post-form > table > tbody > tr > th {
+	width: 20% !important;
+	max-width: 150px !important;
+}
+div.libsyn-post-form > table > tbody > tr > th > td {
+	width: 50% !important;
+	max-width: 462px !important;
+}
+#libsyn-new-media-settings > p {
+	word-wrap: break-word !important;
+}
+#libsyn-new-media-media, #libsyn-new-media-image {
+	width: 60%;
+	max-width: 60%;
+}
+div.libsyn-post-form input[type="checkbox"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, select:hover, textarea:focus {
+	border-color: #60a135;
+	box-shadow: 0 0 2px rgba(96, 161, 53, 1);
+}
+
+.libsyn-posts-table {
+    border-collapse: collapse;
+	float: left;
+    width: 100%;
+}
+
+div.libsyn-post-form .button-primary {
+	background: #82a532 none repeat scroll 0 0;
+	border-color: #82a532;
+	box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+	color: #fff;
+	margin-top: 2px;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px #82a532, 1px 0 1px #82a532, 0 1px 1px #82a532, -1px 0 1px #82a532;
+}
+
+div.libsyn-post-form .button-primary:hover {
+	background: #75942D none repeat scroll 0 0;
+	border-color: #82a532;
+	box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px #82a532, 1px 0 1px #82a532, 0 1px 1px #82a532, -1px 0 1px #82a532;
+}
+
+div.libsyn-post-form .button-primary:focus {
+	background: #22242f none repeat scroll 0 0;
+	border-color: #82a532;
+	box-shadow: 0 1px 0 rgba(120, 200, 230, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px #82a532, 1px 0 1px #82a532, 0 1px 1px #82a532, -1px 0 1px #82a532;
+}
+.settings-error {
+	width: 92%;
+	/* Firefox */
+	width: -moz-calc(93.5% - 20px);
+	/* WebKit */
+	width: -webkit-calc(93.5% - 20px);
+	/* Opera */
+	width: -o-calc(93.5% - 20px);
+	/* Standard */
+	width: calc(93.5% - 20px);
+}
+.libsyn-import-information {
+	
+}
+
+.libsyn-upload-media-dialog {
+	/* Media Upload Dialog Style */
+}
+
+.libsyn-upload-media-dialog h1 {
+	padding: 0 16px;
+	font-size: 22px !important;
+	line-height: 50px;
+	margin: 0;
+	color: rgb(35, 40, 45);
+	font-weight: 600;
+	
+}
+
+/* Fieldset */
+#libsynmodule_form fieldset {
+	border: 1px solid rgb(204, 204, 204) !important;
+	padding: 0.4em !important;
+	margin: 0 0 0 0 !important;
+	-webkit-box-shadow: 10px #000;
+	box-shadow: 10px #000;
+	border-radius: 15px 3px 15px 15px;
+}
+#libsynmodule_form legend {
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	width:auto;
+	padding:0px 10px 0px 10px;
+	margin: 0;
+	border-bottom:none;
+}
+
+/* Help Tip */
+.libsyn-help-tip{
+    position: absolute;
+    /* top: 18px; */
+    /* right: 18px; */
+	margin-right:4px;
+	margin-top:2px;
+    text-align: center;
+    background-color: #3b3c46;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+
+.libsyn-help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.libsyn-help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+	z-index: 999;
+
+}
+
+.libsyn-help-tip p{    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.libsyn-help-tip p:before{ /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:10px;
+    top:-12px;
+}
+
+.libsyn-help-tip p:after{ /* Prevents the tooltip from being hidden */
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+.libsyn-format-video {
+	line-height: 26px;
+}
+
+@media (max-width: 764px) {
+	.wp-block-columns.has-3-columns {
+		flex-flow: row wrap;
+	}
+	
+	.has-3-columns .wp-block-column {
+		order: 2;
+	}
+
+
+	.has-3-columns .wp-block-column:nth-child(2){
+		/* flex-basis: 100%; */
+		/* order: 1; */
+	}
+}
+
+@media (max-width: 478px) {
+	.wp-block-columns.has-3-columns {
+	}
+
+	.wp-block-column {
+		flex-basis: 100%;
+		margin: 20px 0;
+	}
+	
+	.wp-block-column:nth-child(2) {
+		/* transform: scale(1) */
+	}
+}
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+    0% { 
+        opacity:0; 
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}

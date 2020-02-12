@@ -1,0 +1,6 @@
+libsyn-podcasting/lib/libsyn-podcasting-gutenberg\src/
+libsyn-podcasting/lib/libsyn-podcasting-gutenberg\scripts/
+libsyn-podcasting/lib/libsyn-podcasting-gutenberg\node_modules/
+libsyn-podcasting/lib/libsyn-podcasting-gutenberg\package/
+libsyn-podcasting/lib/libsyn-podcasting-gutenberg\README/
+libsyn-podcasting/lib/libsyn-podcasting-gutenberg\plugin/
