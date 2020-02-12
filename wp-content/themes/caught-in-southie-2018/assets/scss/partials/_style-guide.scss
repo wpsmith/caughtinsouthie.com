@@ -1,0 +1,314 @@
+/* Style Guide
+---------------------------------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+body {
+	@extend %base-style;
+}
+
+a {
+	color: $highlight;
+	text-decoration: none;
+	@extend %transition;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	svg {
+		@extend %transition;
+	}
+}
+
+strong {
+	font-weight: 600;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+code,
+pre {
+	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+	font-size: 12px;
+}
+
+code {
+	padding: 2px 4px;
+	white-space: nowrap;
+}
+
+pre {
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	line-height: 18px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+}
+
+pre code {
+	padding: 0;
+	color: inherit;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: transparent;
+	border: 0;
+}
+
+cite {
+	font-style: normal;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+button {
+	font-size: 16px;
+}
+
+/* Paragraph
+--------------------------------------------- */
+
+p {
+	margin: 0 0 $base-margin;
+	padding: 0;
+
+	&.large,
+	&.wp-block-subhead {
+    	@include font-sizes( 20px, null, 24px );
+		font-style: normal;
+		opacity: 1;
+	}
+
+	&.small {
+	    @include font-sizes( 12px, null, 14px );
+	}
+
+	&.extra-margin {
+		margin-bottom: $margin_2x;
+	}
+}
+
+/* List Items
+--------------------------------------------- */
+
+ol {
+    margin: 0 0 $margin_2x 32px;
+
+    li {
+        list-style-type: decimal;
+    }
+
+    ol {
+        margin-bottom: 0;
+    }
+}
+
+ul {
+    margin: 0 0 $margin_2x 32px;
+
+    li {
+        list-style-type: disc;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+/* Blockquote
+--------------------------------------------- */
+
+blockquote,
+blockquote.wp-block-quote {
+	background: transparent;
+	border-left: 2px solid $border-color;
+	color: $base-color;
+	@include font-sizes( 20px, null, 24px );
+	font-style: normal;
+	margin: $base-margin 0;
+	padding: 0 0 0 20px;
+	text-align: center;
+
+	cite {
+		color: $base-color;
+		display: block;
+		@include font-sizes( 16px, 18px );
+		font-weight: 600;
+		margin-top: $base-margin;
+	}
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+
+	&.wp-block-pullquote {
+		border-left: none;
+		border-top: 2px solid $border-color;
+		border-bottom: 2px solid $border-color;
+		color: $base-color;
+		padding: 18px 0;
+
+		&,
+		&.alignleft,
+		&.alignright {
+
+			max-width: 392px;
+			margin-top: 10px;
+
+			&,
+			& > p {
+				@include font-sizes( 20px, null, 24px );
+				font-style: normal;
+				font-weight: 600;
+			}
+		}
+
+		cite {
+			color: $base-color;
+			@include font-sizes( 16px, 18px );
+			font-weight: 400;
+			font-style: italic;
+			text-transform: none;
+		}
+	}
+}
+
+/* Horizontal Rule
+--------------------------------------------- */
+
+hr,
+hr.wp-block-separator,
+.clear-line,
+img.wp-more-tag {
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	height: 1px;
+	border: none;
+	border-top: 1px solid $border_color;
+	margin: $margin_2x 0;
+}
+
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $base-color;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0;
+	margin-bottom: $base-margin;
+	padding: 0;
+
+	a {
+		color: $base-color;
+
+		&:hover {
+			color: $highlight;
+			text-decoration: none;
+		}
+	}
+}
+
+h1 {
+    @include font-sizes( 32px, null, 40px );
+}
+
+h2 {
+    @include font-sizes( 28px, null, 32px );
+}
+
+h3 {
+    @include font-sizes( 24px, null, 28px );
+}
+
+h4 {
+    @include font-sizes( 20px, null, 24px );
+}
+
+h5 {
+    @include font-sizes( 18px, null, 20px );
+}
+
+h6 {
+    @include font-sizes( 16px, null, 18px );
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+	margin-bottom: $base-margin;
+}
+
+img {
+	display: block;
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 0 0 $base-margin;
+	/* Extra wide images within figure tags don't overflow the content area. */
+	max-width: 100%;
+	position: relative;
+}
+
+/* Alignments
+--------------------------------------------- */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: $base-margin;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: $base-margin;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption,
+.wp-block-image {
+	margin-bottom: $base-margin;
+	text-align: left;
+
+	figcaption {
+		font-size: 12px;
+		margin-top: $base-margin;
+	}
+
+	&.alignfull {
+		@extend %large-margin;
+	}
+}

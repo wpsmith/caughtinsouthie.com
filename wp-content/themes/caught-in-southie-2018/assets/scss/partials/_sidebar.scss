@@ -1,0 +1,30 @@
+/* Sidebar
+---------------------------------------------------------------------------------------------------- */
+
+.widget-area .widget {
+	margin: 0 0 $margin_2x;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.sidebar-primary .widget {
+	max-width: 300px;
+	margin: 0 auto $margin_2x;
+}
+
+.widget_properties {
+
+	h3.widget-title {
+		@extend %section-title;
+	}
+}
+
+.widget_taxonomy_term_widget {
+
+	.current-cat > a {
+		color: $green_2;
+		font-weight: 700;
+	}
+}

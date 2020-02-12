@@ -1,0 +1,93 @@
+/* Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	background: $grey_4;
+	padding: $base-margin 0;
+	text-align: center;
+
+	p, li {
+		color: $grey_6;
+		font-size: 10px;
+		line-height: 15px;
+	}
+
+	a.back-to-top {
+		font-size: 12px;
+		color: $base-color;
+		display: inline-block;
+
+		.arrow {
+			background: $green_1;
+			border-radius: 50%;
+			display: block;
+			margin: 0 auto;
+			width: 32px;
+			height: 32px;
+			text-align: center;
+
+			svg {
+				fill: $white;
+				@include icon-position( 20px, 32px );
+			}
+		}
+
+		&:hover {
+			color: $green_2;
+			text-decoration: none;
+
+			.arrow {
+				background: $green_2;
+			}
+		}
+	}
+
+	p.copyright {
+		margin: 0;
+	}
+
+	ul.menu {
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			display: inline-block;
+
+			&:not(:last-child)::after {
+				color: $grey_6;
+				content: '|';
+				margin: 0 6px;
+			}
+
+			a {
+				color: $grey_6;
+			}
+		}
+	}
+
+	.site-container & .wpforms-container {
+		max-width: 604px;
+		margin: 0 auto 36px;
+		position: relative;
+
+		.wpforms-field-container {
+			padding-right: 100px;
+
+			.wpforms-field {
+				margin: 0;
+			}
+		}
+
+		.wpforms-submit-container {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 100px;
+
+			button {
+				min-width: 0;
+				width: 100%;
+			}
+		}
+	}
+}

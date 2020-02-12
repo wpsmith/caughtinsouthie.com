@@ -1,0 +1,362 @@
+/* Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	background: $white;
+	box-shadow: 0 2px 8px 0 rgba( $black, .25 );
+
+	.wrap {
+		padding: 0 8px;
+	}
+
+	.title-area {
+		float: left;
+		width: 175px;
+		position: relative;
+		margin: 8px 0 7px;
+
+		h1.site-title,
+		p.site-title {
+			margin: 0;
+			font-size: 28px;
+			line-height: 33px;
+		}
+
+		.site-title a {
+			background: url(../images/logo.svg) no-repeat center center;
+			background-size: contain;
+			background-position: left center;
+			display: block;
+			text-indent: -9999em;
+			width: 100%;
+			height: 0;
+			padding-bottom: 33px / 175px * 100%;
+		}
+
+		.site-description {
+			display: none;
+		}
+
+		@include media(">=desktop_menu") {
+			width: 435px;
+			margin: 18px 0;
+
+			.site-title a {
+				background: url(../images/logo-tagline.svg) no-repeat center center;
+				background-size: contain;
+				background-position: left center;
+				padding-bottom: 96px / 435px * 100%;
+			}
+		}
+	}
+
+	.header-widget-area {
+		float: right;
+		max-width: 728px;
+		margin: 21px 0;
+	}
+
+	.nav-mobile {
+		float: right;
+		width: auto;
+		margin: 8px 0;
+
+		@include media(">=desktop_menu") {
+			display: none;
+		}
+
+		a {
+			background: $grey_2;
+			border-radius: 50%;
+			display: block;
+			float: left;
+			width: 32px;
+			height: 32px;
+			text-align: center;
+			@include margin-no-edge( 0 4px );
+
+			svg {
+				fill: $grey_5;
+				@include icon-position( 20px, 32px );
+			}
+
+			&:hover,
+			&.active {
+				text-decoration: none;
+				background: $green_1;
+
+				svg {
+					fill: $white;
+				}
+			}
+
+			&.mobile-menu-toggle {
+				background: $green_1;
+
+				svg {
+					fill: $white;
+				}
+
+				&:hover {
+					background: $green_2;
+
+					svg {
+						fill: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* Admin Bar
+--------------------------------------------- */
+
+@include media(">=tablet" ) {
+	.admin-bar {
+
+		.site-container {
+			padding-top: 32px;
+		}
+
+		@include media("<desktop_menu") {
+
+			.site-container {
+				padding-top: 32px + 48px;
+			}
+
+			.site-header {
+				top: 32px;
+			}
+		}
+	}
+}
+
+@include media("<tablet") {
+	#wpadminbar {
+		display: none !important;
+	}
+}
+
+/* Fixed mobile header
+--------------------------------------------- */
+
+@include media("<desktop_menu") {
+
+	.site-container {
+		padding-top: 48px;
+	}
+
+	.site-header {
+		position: fixed;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 999;
+
+		.nav-primary,
+		.header-widget-area {
+			display: none;
+		}
+
+	}
+}
+
+/* Site Navigation
+--------------------------------------------- */
+
+.nav-menu {
+
+	ul {
+		clear: both;
+		line-height: 1;
+		margin: 0;
+		width: 100%;
+	}
+
+	.menu-item {
+		float: left;
+		list-style: none;
+		margin-right: 24px;
+
+		a {
+			border: none;
+			border-bottom: 4px solid transparent;
+			color: $base-color;
+			display: block;
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			line-height: 18px;
+			padding: 18px 0 14px;
+			position: relative;
+			text-transform: uppercase;
+		}
+
+		&.current-menu-item > a,
+		&.current-menu-ancestor > a {
+			border-bottom-color: $green_1;
+			color: $green_1;
+		}
+
+		&:hover > a {
+			color: $green_1;
+			text-decoration: none;
+		}
+
+		&.secondary {
+
+			& > a {
+				color: $grey_6;
+			}
+
+			&:hover > a {
+				color: $green_1;
+			}
+		}
+
+		&.extras {
+			float: right;
+			position: relative;
+
+			&:hover {
+				position: relative;
+			}
+
+			& > .label {
+				color: $grey_6;
+				font-size: 10px;
+				font-weight: 600;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				position: absolute;
+				top: -12px;
+				right: 0;
+				width: 100px;
+				text-align: center;
+			}
+
+			& > a {
+				background: $grey_2;
+				border: none;
+				border-radius: 50%;
+				display: inline-block;
+				padding: 0;
+				width: 32px;
+				height: 32px;
+				text-align: center;
+				margin-top: 11px;
+
+				svg {
+					@include icon-position( 20px, 32px );
+					fill: $grey_5;
+				}
+
+				&:hover,
+				&.active {
+					background: $green_1;
+
+					svg {
+						fill: $white;
+					}
+				}
+			}
+
+			.search-form {
+				background: $white;
+				box-shadow: 0 2px 8px 0 rgba( $black, .25 );
+				display: none;
+				padding: 18px;
+				width: 387px;
+				position: absolute;
+				top: 55px;
+				right: 0;
+				z-index: 999;
+
+				&.active {
+					display: block;
+				}
+
+				.search-submit {
+					right: 8px + 18px;
+				}
+			}
+		}
+
+		&:hover {
+			position: static;
+
+			& > .sub-menu {
+				left: auto;
+				opacity: 1;
+			}
+		}
+	}
+
+	.sub-menu {
+		background: $white;
+		box-shadow: 0 2px 8px 0 rgba( $black, .25 );
+		left: -9999px;
+		opacity: 0;
+		padding: 10px 0;
+		position: absolute;
+		width: 270px;
+		z-index: 99;
+
+		a {
+			background: transparent;
+			border: none;
+			color: $grey_6;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 16px;
+			letter-spacing: .75px;
+			text-transform: uppercase;
+			padding: 11px 18px;
+			position: relative;
+			width: 250px;
+		}
+
+		.menu-item:hover > a,
+		.current-menu-item > a {
+			color: $green_1;
+		}
+
+		.sub-menu {
+			margin: -54px 0 0 199px;
+		}
+	}
+}
+
+/* Mobile Search
+---------------------------------------------------------------------------------------------------- */
+
+.mobile-search {
+	background: $grey_3;
+	display: none;
+	padding: 12px;
+
+	@include media("<desktop") {
+		&.active {
+			display: block;
+		}
+	}
+}
+
+/* Mobile Header Ad
+---------------------------------------------------------------------------------------------------- */
+
+.mobile-header {
+	background: $grey_3;
+	padding: 18px 0;
+
+	img {
+		margin: 0 auto;
+	}
+
+	@include media(">=desktop_menu") {
+		display: none;
+	}
+}

@@ -1,0 +1,67 @@
+/* Box Sizing
+--------------------------------------------- */
+
+html,
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Wrap
+--------------------------------------------- */
+
+.wrap {
+    max-width: map-get( $breakpoints, 'desktop' );
+    margin: 0 auto;
+	padding-left:  ($grid-gutter / 2);
+	padding-right: ($grid-gutter / 2);
+	@include clearfix;
+}
+
+.site-inner > .wrap {
+
+	max-width: 32px + 710px + 32px + 392px;
+
+	.full-width-content & {
+		max-width: 1028px + 32px;
+	}
+}
+
+/* Sidebar Layouts
+--------------------------------------------- */
+
+@include media("<medium") {
+
+	.sidebar-primary {
+		display: none;
+	}
+}
+
+@include media(">=medium") {
+
+	// IE Fallback
+	.sidebar-content,
+	.content-sidebar {
+
+		.site-main {
+			float: left;
+			width: 710px / 1134px * 100%;
+		}
+
+		.sidebar-primary {
+			float: right;
+			width: 392px / 1134px * 100%;
+		}
+	}
+
+	.sidebar-content .site-main {
+		float: right;
+	}
+
+	.sidebar-content .sidebar-primary {
+		float: left;
+	}
+}
