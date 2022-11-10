@@ -12,7 +12,7 @@
 		"is-number": "^6.0.0",
 		"keyfinder": "^1.0.0",
 		"parcel-bundler": "^1.12.4",
-		"postcss-modules": "^1.1.0",
+		"postcss-modules": "^1.5.0",
 		"scss-loader": "0.0.1",
 		"v-tooltip": "^2.0.0-rc.33",
 		"vue": "^2.5.16",
