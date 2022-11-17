@@ -51,7 +51,7 @@
     "vue-template-compiler": "^2.6.10",
     "vuedraggable": "^2.23.0",
     "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.4"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0"
